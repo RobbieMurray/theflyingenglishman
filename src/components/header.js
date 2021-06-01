@@ -18,8 +18,8 @@ const Header = ({ siteTitle }) => (
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",
+        alignItems: "center",
         listStyleType: "none",
-        padding: "0.5rem",
         width: "500px",
         textDecoration: "none",
       }}
