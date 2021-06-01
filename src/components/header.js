@@ -4,7 +4,18 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1>{siteTitle}</h1>
+    <h1>
+      <Link
+        to="/"
+        style={{
+          color: `black`,
+          textDecoration: `none`,
+          fontfamily: `montserrat`,
+        }}
+      >
+        {siteTitle}
+      </Link>
+    </h1>
   </header>
 )
 

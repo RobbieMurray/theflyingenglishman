@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/montserrat": "^4.4.2",
+    "@fontsource/roboto": "^4.4.2",
+    "bootstrap": "4.6.0",
     "gatsby": "^3.4.1",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-image": "^1.4.0",
@@ -16,6 +19,7 @@
     "gatsby-transformer-sharp": "^3.4.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
   },
