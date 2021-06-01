@@ -1,15 +1,22 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const About = () => (
   <Layout>
-    <Seo title="Page two" />
+    <Seo title="About" />
     <h1>Hi</h1>
     <p>My name is Robbie and I like to ski and film</p>
-    <Link to="/">Go back to the homepage</Link>
+    <StaticImage
+      src="../images/me.png"
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="the flying englishman filming"
+      layout="CONSTRAINED"
+      margin="150px"
+    />
   </Layout>
 )
 

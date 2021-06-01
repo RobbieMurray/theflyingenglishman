@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Container, Carousel } from "react-bootstrap"
 
@@ -11,9 +11,6 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 const IndexPage = ({ data }) => (
   <Layout>
     <Seo title="Home" />
-    <p>
-      <Link to="/about/">About</Link> <br />
-    </p>
     <Container>
       <Carousel>
         {data.galleryPhotos.edges.map(image => (
@@ -44,7 +41,7 @@ export const pageQuery = graphql`
           id
           base
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, height: 600)
+            gatsbyImageData(layout: CONSTRAINED, height: 800)
           }
         }
       }
