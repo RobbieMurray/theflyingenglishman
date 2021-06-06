@@ -159,7 +159,9 @@ const Header = ({ siteTitle }) => {
         </Link>
 
         <Link to="/" className="logo desktop title">
-          <h1 className="title">{siteTitle}</h1>
+          <h1 className="title" style={{ paddingLeft: "1.5em" }}>
+            {siteTitle}
+          </h1>
           {/* <StaticImage
             className="logo desktop"
             src="../images/tfe.svg"
