@@ -1,74 +1,66 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import "./footer.css"
 
 const social = "30px"
 
 const Footer = ({ siteTitle }) => (
-  <footer
-    style={{
-      padding: `0.8rem`,
-      background: `white`,
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-    }}
-  >
-    <ul
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-        listStyleType: "none",
-        padding: "0.5rem",
-        width: "200px",
-      }}
-    >
+  <footer>
+    <ul className="social-list">
       <li>
         <a href="https://www.instagram.com/the_flying_englishman/">
-          <StaticImage
+          <p className="social">Instagram</p>
+          {/* <StaticImage
+            className="logo"
             src="../images/instagram.svg"
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
             alt="instagram logo"
-            style={{ "max-width": social }}
-          />
+            width={40}
+            height={40}
+          /> */}
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/channel/UClvy8yjhU3qdzTdtvBMrkEQ">
-          <StaticImage
+          <p className="social">Youtube</p>
+          {/* <StaticImage
+            className="logo"
             src="../images/youtube.svg"
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
             alt="youtube logo"
-            style={{ "max-width": social }}
-          />
+            width={40}
+            height={40}
+          /> */}
         </a>
       </li>
       <li>
         <a href="https://www.tiktok.com/@the_flying_englishman">
-          <StaticImage
-            src="../images/tik-tok.svg"
+          <p className="social">TikTok</p>
+          {/* <StaticImage
+            className="logo"
+            src="../images/tiktok.svg"
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="tiktok logo"
             style={{ "max-width": social }}
-          />
+          /> */}
         </a>
       </li>
       <li>
         <a href="https://vsco.co/the-flying-englishman/gallery">
-          <StaticImage
+          <p className="social">VSCO</p>
+          {/* <StaticImage
+            className="logo"
             src="../images/vsco.svg"
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="tiktok logo"
             style={{ "max-width": social }}
-          />
+          /> */}
         </a>
       </li>
     </ul>
-    © {new Date().getFullYear()}, the flying englishman
+    <p className="copywrite">
+      © {new Date().getFullYear()}, the flying englishman
+    </p>
   </footer>
 )
 
