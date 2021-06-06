@@ -59,7 +59,7 @@ const Footer = ({ siteTitle }) => (
       </li>
     </ul>
     <p className="copywrite">
-      © {new Date().getFullYear()}, the flying englishman
+      © {new Date().getFullYear()}. the flying englishman
     </p>
   </footer>
 )
