@@ -8,7 +8,7 @@ import "./about.css"
 const About = () => (
   <Layout>
     <Seo title="About" />
-    <div className="about" style={{ padding: "2em" }}>
+    <div className="about" style={{ padding: "1em 4em" }}>
       <h1>Hi</h1>
       <p>My name is Robbie and I like to ski and film</p>
       <StaticImage
