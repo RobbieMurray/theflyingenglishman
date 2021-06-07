@@ -159,7 +159,7 @@ const Header = ({ siteTitle }) => {
         </Link>
 
         <Link to="/" className="logo desktop title">
-          <h1 className="title" style={{ paddingLeft: "1.5em" }}>
+          <h1 className="title" style={{}}>
             {siteTitle}
           </h1>
           {/* <StaticImage
@@ -173,7 +173,7 @@ const Header = ({ siteTitle }) => {
         </Link>
 
         <MenuLinks nav={nav}>
-          <ul>
+          <ul className="nav">
             <li className="mobile">
               <Link className="nav-item mobile" to="/">
                 Home
