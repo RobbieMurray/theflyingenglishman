@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
     <Container>
       <Carousel className="desktopPhotos">
         {data.galleryPhotos.edges.map(image => (
-          <Carousel.Item key={image.node.id}>
+          <Carousel.Item key={image.node.id} interval={1000}>
             <GatsbyImage
               image={image.node.childImageSharp.gatsbyImageData}
               alt={image.node.base.split(".")[0]}
