@@ -25,20 +25,6 @@ ul{
     flex-wrap: wrap;
 }
 
-.social{
-    text-decoration: none;
-    color: #2c2c2c;
-}
-a:hover{color: gray;
-    text-decoration: "none";
-    transition: color 300ms;}
-    
-.social:hover,
-.social:focus{
-    color: gray;
-    text-decoration: "none";
-    transition: color 300ms;
-}
 
 .copywrite{
     padding-left: 2em;

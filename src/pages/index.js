@@ -20,9 +20,10 @@ const IndexContainer = styled.div`
   @media ${device.tablet} {
     padding: 1em 3em;
     .desktopPhotos {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      place-items: center;
+      padding: 0;
+      margin: 0;
     }
   }
 
@@ -38,7 +39,7 @@ const IndexPage = ({ data }) => (
       <Container className="desktopPhotos">
         <Carousel variant="dark" className="desktopPhotos">
           {data.galleryPhotos.edges.map(image => (
-            <Carousel.Item key={image.node.id} interval={1000}>
+            <Carousel.Item key={image.node.id} interval={2500}>
               <GatsbyImage
                 image={image.node.childImageSharp.gatsbyImageData}
                 alt={image.node.base.split(".")[0]}
