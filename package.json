@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "the-flying-englishman",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple website for the flying englishman",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "the flying englishman",
   "dependencies": {
     "@fontsource/montserrat": "^4.4.2",
     "@fontsource/roboto": "^4.4.2",
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/RobbieMurray/theflyingenglishman"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

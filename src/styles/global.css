@@ -1,6 +1,0 @@
-a:hover,
-a:focus {
-    color: gray;
-    text-decoration: "none";
-    transition: color 300ms;
-}

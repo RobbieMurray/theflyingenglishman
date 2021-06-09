@@ -1,11 +1,10 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import "./footer.css"
-
-const social = "30px"
+import GlobalStyle from "../styles/globalstyles"
+import "../styles/footer.css"
 
 const Footer = ({ siteTitle }) => (
   <footer>
+    <GlobalStyle />
     <ul className="social-list">
       <li>
         <a href="https://www.instagram.com/the_flying_englishman/">
@@ -53,7 +52,6 @@ const Footer = ({ siteTitle }) => (
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="tiktok logo"
-            style={{ "max-width": social }}
           /> */}
         </a>
       </li>

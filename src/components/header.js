@@ -3,11 +3,11 @@ import { useState } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import "./header.css"
+import "../styles/header.css"
 import styled, { createGlobalStyle } from "styled-components"
 import { device } from "./device"
 
-const Global = createGlobalStyle`
+const MenuViewLock = createGlobalStyle`
   body{
     overflow-x:hidden; 
     overflow-y:${({ nav }) => (nav ? "hidden" : "visible")}; 
@@ -135,7 +135,8 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header>
-      <Global nav={nav} />
+      <MenuViewLock nav={nav} />
+      {/* <GlobalStyle /> */}
       <div className="div-title">
         <MenuIcon
           className="menu-icon mobile"
