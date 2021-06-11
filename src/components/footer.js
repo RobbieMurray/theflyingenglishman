@@ -1,6 +1,26 @@
 import * as React from "react"
 import GlobalStyle from "../styles/globalstyles"
 import "../styles/footer.css"
+import styled from "styled-components"
+import { device } from "./device"
+
+// mobileS: "320px",
+//   mobileM: "375px",
+//   mobileL: "425px",
+
+const Social = styled.p`
+  padding: 1em;
+
+  @media ${device.mobileS} {
+    padding: 1em 1.5em;
+  }
+  @media ${device.mobileM} {
+    padding: 1em 2em;
+  }
+  @media ${device.mobileL} {
+    padding: 1em;
+  }
+`
 
 const Footer = ({ siteTitle }) => (
   <footer>
@@ -8,7 +28,7 @@ const Footer = ({ siteTitle }) => (
     <ul className="social-list">
       <li>
         <a href="https://www.instagram.com/the_flying_englishman/">
-          <p className="social">Instagram</p>
+          <Social className="social">Instagram</Social>
           {/* <StaticImage
             className="logo"
             src="../images/instagram.svg"
@@ -20,7 +40,7 @@ const Footer = ({ siteTitle }) => (
       </li>
       <li>
         <a href="https://www.youtube.com/channel/UClvy8yjhU3qdzTdtvBMrkEQ">
-          <p className="social">Youtube</p>
+          <Social className="social">Youtube</Social>
           {/* <StaticImage
             className="logo"
             src="../images/youtube.svg"
@@ -32,7 +52,7 @@ const Footer = ({ siteTitle }) => (
       </li>
       <li>
         <a href="https://www.tiktok.com/@the_flying_englishman">
-          <p className="social">TikTok</p>
+          <Social className="social">TikTok</Social>
           {/* <StaticImage
             className="logo"
             src="../images/tiktok.svg"
@@ -45,7 +65,7 @@ const Footer = ({ siteTitle }) => (
       </li>
       <li>
         <a href="https://vsco.co/the-flying-englishman/gallery">
-          <p className="social">VSCO</p>
+          <Social className="social">VSCO</Social>
           {/* <StaticImage
             className="logo"
             src="../images/vsco.svg"
