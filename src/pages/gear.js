@@ -39,25 +39,25 @@ const Gear = () => (
       <h1>Gear List:</h1>
       <ul>
         <li>
-          Go Pro HERO 9 |
+          Go Pro HERO 9 |{" "}
           <a href="https://amzn.to/3pzqkCv" alt="link to buy go pro hero 9">
             Buy
           </a>
         </li>
         <li>
-          Sandisk 256GB Micro SD Card |
+          Sandisk 256GB Micro SD Card |{" "}
           <a href="https://amzn.to/3ilg67h" alt="link to buy sd card">
             Buy
           </a>
         </li>
         <li>
-          Go Pro HERO 9 Media Mod |
+          Go Pro HERO 9 Media Mod |{" "}
           <a href="https://amzn.to/34TjNcf" alt="link to buy go pro media mod">
             Buy
           </a>
         </li>
         <li>
-          Go Pro El Grande Pole |
+          Go Pro El Grande Pole |{" "}
           <a
             href="https://amzn.to/2TzEpnp"
             alt="link to buy go pro el grande pole"
@@ -65,16 +65,32 @@ const Gear = () => (
             Buy
           </a>
         </li>
-        <li>Polar Pro ND filters | </li>
-        <li>Senheizer MKE 200 Shotgun Mic | </li>
         <li>
-          Mophie Powerstation Mini |
+          Polar Pro ND filters for Go Pro HERO 9 |{" "}
+          <a
+            href="https://www.polarprofilters.com/collections/filters/products/hero9-nd-filters"
+            alt="link to buy polar pro nd filters for gopro hero 9"
+          >
+            Buy
+          </a>
+        </li>
+        <li>
+          Sennheiser MKE 200 Shotgun Mic |{" "}
+          <a
+            href="https://amzn.to/3xpT9DY"
+            alt="link to buy Sennheiser MKE 200 Shotgun microphone"
+          >
+            Buy
+          </a>
+        </li>
+        <li>
+          Mophie Powerstation Mini |{" "}
           <a href="https://amzn.to/34W1gvS" alt="link to buy powerbank">
             Buy
           </a>
         </li>
         <li>
-          DJI Air 2s Fly More Combo |
+          DJI Air 2s Fly More Combo |{" "}
           <a href="https://amzn.to/34UGywI" alt="link to buy dji air 2s drone">
             Buy
           </a>
