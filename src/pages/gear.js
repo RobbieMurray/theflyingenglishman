@@ -59,7 +59,7 @@ const Gear = () => (
         <li>
           Go Pro El Grande Pole |
           <a
-            href="https://amzn.to/34TjNcf"
+            href="https://amzn.to/2TzEpnp"
             alt="link to buy go pro el grande pole"
           >
             Buy
