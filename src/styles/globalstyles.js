@@ -1,12 +1,18 @@
 import { createGlobalStyle } from "styled-components"
 
+const BLK = "#2c2c2c"
+
 const GlobalStyle = createGlobalStyle`
     body{
         overflow-x:hidden; 
-        overflow-y:${({ nav }) => (nav ? "hidden" : "visible")}; 
     }
+    h1{
+        color: ${BLK};
+    }
+    p{
+        color: ${BLK};}
     a{
-        color: #2c2c2c;
+        color: ${BLK};
         text-decoration: none;
     }
 
