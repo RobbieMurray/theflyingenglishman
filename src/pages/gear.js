@@ -27,10 +27,18 @@ const Container = styled.div`
 
   li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0.3em 0;
+    padding: 1em 0;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
   }
 
   .gearimg {
@@ -39,6 +47,16 @@ const Container = styled.div`
 
   @media ${device.tablet} {
     padding: 1em 3em;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1em 0;
+    }
+    .text {
+      justify-content: flex-start;
+    }
   }
 
   @media ${device.laptopL} {
@@ -62,11 +80,13 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Go Pro HERO 9 |{" "}
-          <a href="https://amzn.to/3pzqkCv" alt="link to buy go pro hero 9">
-            {" "}
-            Buy
-          </a>
+          <div className="text">
+            Go Pro HERO 9 |{" "}
+            <a href="https://amzn.to/3pzqkCv" alt="link to buy go pro hero 9">
+              {" "}
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -78,10 +98,12 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Sandisk 256GB Micro SD Card |{" "}
-          <a href="https://amzn.to/3ilg67h" alt="link to buy sd card">
-            Buy
-          </a>
+          <div className="text">
+            Sandisk 256GB Micro SD Card |{" "}
+            <a href="https://amzn.to/3ilg67h" alt="link to buy sd card">
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -93,10 +115,15 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Go Pro HERO 9 Media Mod |{" "}
-          <a href="https://amzn.to/34TjNcf" alt="link to buy go pro media mod">
-            Buy
-          </a>
+          <div className="text">
+            Go Pro HERO 9 Media Mod |{" "}
+            <a
+              href="https://amzn.to/34TjNcf"
+              alt="link to buy go pro media mod"
+            >
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -108,13 +135,15 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Go Pro El Grande Pole |{" "}
-          <a
-            href="https://amzn.to/2TzEpnp"
-            alt="link to buy go pro el grande pole"
-          >
-            Buy
-          </a>
+          <div className="text">
+            Go Pro El Grande Pole |{" "}
+            <a
+              href="https://amzn.to/2TzEpnp"
+              alt="link to buy go pro el grande pole"
+            >
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -126,13 +155,15 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Polar Pro ND Filters |{" "}
-          <a
-            href="https://www.polarprofilters.com/collections/filters/products/hero9-nd-filters"
-            alt="link to buy polar pro nd filters for gopro hero 9"
-          >
-            Buy
-          </a>
+          <div className="text">
+            Polar Pro ND Filters |{" "}
+            <a
+              href="https://www.polarprofilters.com/collections/filters/products/hero9-nd-filters"
+              alt="link to buy polar pro nd filters for gopro hero 9"
+            >
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -144,13 +175,15 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Sennheiser MKE 200 Microphone |{" "}
-          <a
-            href="https://amzn.to/3xpT9DY"
-            alt="link to buy Sennheiser MKE 200 Shotgun microphone"
-          >
-            Buy
-          </a>
+          <div className="text">
+            Sennheiser MKE 200 Microphone |{" "}
+            <a
+              href="https://amzn.to/3xpT9DY"
+              alt="link to buy Sennheiser MKE 200 Shotgun microphone"
+            >
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -162,10 +195,12 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          Mophie Powerstation Mini |{" "}
-          <a href="https://amzn.to/34W1gvS" alt="link to buy powerbank">
-            Buy
-          </a>
+          <div className="text">
+            Mophie Powerstation Mini |{" "}
+            <a href="https://amzn.to/34W1gvS" alt="link to buy powerbank">
+              Buy
+            </a>
+          </div>
         </li>
         <li>
           <StaticImage
@@ -177,10 +212,15 @@ const Gear = () => (
             margin="150px"
             className="gearimg"
           />
-          DJI Air 2s Fly More Combo |{" "}
-          <a href="https://amzn.to/34UGywI" alt="link to buy dji air 2s drone">
-            Buy
-          </a>
+          <div className="text">
+            DJI Air 2s Fly More Combo |{" "}
+            <a
+              href="https://amzn.to/34UGywI"
+              alt="link to buy dji air 2s drone"
+            >
+              Buy
+            </a>
+          </div>
         </li>
       </ul>
     </Container>
