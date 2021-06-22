@@ -39,6 +39,7 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 1em;
+    white-space: pre-wrap;
   }
 
   .gearimg {
