@@ -3,17 +3,101 @@ import { useState } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import "../styles/header.css"
 import styled, { createGlobalStyle } from "styled-components"
 import { device } from "./device"
 
 const MenuViewLock = createGlobalStyle`
   body{
-    overflow-x:hidden; 
     overflow-y:${({ nav }) => (nav ? "hidden" : "visible")}; 
+    
   }
 `
 const BLK = "#2c2c2c"
+
+const HeaderContainer = styled.header`
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: "";
+  width: 100%;
+  text-decoration: "none";
+  height: auto;
+
+  .logo {
+    display: none;
+  }
+
+  .short-logo {
+    max-height: 60px;
+    max-width: 60px;
+    transform: translateX(20%);
+  }
+
+  @media ${device.mobileL} {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: streched;
+
+    .nav {
+      width: auto;
+      height: auto;
+    }
+
+    button,
+    .mobile,
+    .menu-icon {
+      display: none;
+    }
+
+    .short-logo {
+      max-height: 60px;
+      max-width: 60px;
+      transform: translateX(0);
+    }
+  }
+
+  @media ${device.tablet} {
+    .logo {
+      display: contents;
+      color: #2c2c2c;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .title {
+      padding-left: 1em;
+      font-size: 1.5em;
+      white-space: nowrap;
+    }
+  }
+
+  @media ${device.laptop} {
+    .title {
+      padding-left: 1.2em;
+      font-size: 1.6em;
+    }
+
+    .nav-item {
+      padding: 1.2em;
+    }
+  }
+
+  @media ${device.laptopL} {
+    .title {
+      padding-left: 1.2em;
+      font-size: 1.8em;
+    }
+
+    .nav-item {
+      padding: 1.5em;
+    }
+  }
+`
 
 const MenuIcon = styled.button`
   position: relative;
@@ -27,7 +111,6 @@ const MenuIcon = styled.button`
   cursor: pointer;
   z-index: 5;
   transition: transform 300ms;
-  transform: ${({ nav }) => (nav ? "translateX(100%)" : "translateX(0)")};
 
   div {
     width: 1.5rem;
@@ -44,6 +127,7 @@ const MenuIcon = styled.button`
 
     :nth-child(2) {
       opacity: ${({ nav }) => (nav ? "0" : "1")};
+      transform: ${({ nav }) => (nav ? "translateX(-250%)" : "translateX(0)")};
     }
 
     :nth-child(3) {
@@ -56,7 +140,7 @@ const MenuIcon = styled.button`
     z-index: -1;
   }
 `
-const MenuLinks = styled.nav`
+const MenuLinks = styled.div`
   height: 100vh;
   width: 100%;
   color: ${BLK};
@@ -105,11 +189,12 @@ const MenuLinks = styled.nav`
     }
   }
   @media ${device.mobileL} {
-    transform: translateX(0);
+    position: relative;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: auto;
+    height: 100%;
     width: 100%;
     background: transparent;
     z-index: 3;
@@ -119,13 +204,16 @@ const MenuLinks = styled.nav`
       height: auto;
       width: auto;
       flex-direction: row;
-      justify-content: right;
-      align-items: right;
-      padding: 1rem;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+
       background: transparent;
+      margin: 0;
     }
     li {
-      padding: 1rem;
+      padding: 0 1rem;
+      margin: 0;
     }
   }
 `
@@ -134,36 +222,34 @@ const Header = ({ siteTitle }) => {
   const [nav, showNav] = useState(false)
 
   return (
-    <header>
+    <HeaderContainer>
       <MenuViewLock nav={nav} />
-      {/* <GlobalStyle /> */}
-      <div className="div-title">
-        <MenuIcon
-          className="menu-icon mobile"
-          onClick={() => showNav(!nav)}
-          nav={nav}
-        >
-          <div />
-          <div />
-          <div />
-        </MenuIcon>
+      <MenuIcon
+        className="menu-icon mobile"
+        onClick={() => showNav(!nav)}
+        nav={nav}
+      >
+        <div />
+        <div />
+        <div />
+      </MenuIcon>
 
-        <Link to="/" className="short-logo tablet">
-          <StaticImage
-            className="short-logo tablet"
-            src="../images/tfe.svg"
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="the flying englishman logo"
-            layout="constrained"
-          />
-        </Link>
+      <Link to="/" className="short-logo tablet">
+        <StaticImage
+          className="short-logo tablet"
+          src="../images/tfe.svg"
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="the flying englishman logo"
+          layout="constrained"
+        />
+      </Link>
 
-        <Link to="/" className="logo desktop title">
-          <h1 className="title" style={{}}>
-            {siteTitle}
-          </h1>
-          {/* <StaticImage
+      <Link to="/" className="logo tablet title">
+        <h1 className="title" style={{}}>
+          {siteTitle}
+        </h1>
+        {/* <StaticImage
             className="logo desktop"
             src="../images/tfe.svg"
             formats={["AUTO", "WEBP", "AVIF"]}
@@ -171,38 +257,37 @@ const Header = ({ siteTitle }) => {
             layout="constrained"
             quality={50}
           /> */}
-        </Link>
+      </Link>
 
-        <MenuLinks nav={nav}>
-          <ul className="nav">
-            <li className="mobile">
-              <Link className="nav-item mobile" to="/">
-                Home
-              </Link>{" "}
-              <br />
-            </li>
-            <li>
-              <Link className="nav-item" to="/about/">
-                About
-              </Link>{" "}
-              <br />
-            </li>
-            <li>
-              <Link className="nav-item" to="/gear/">
-                Gear
-              </Link>{" "}
-              <br />
-            </li>
-            <li>
-              <Link className="nav-item" to="/contact/">
-                Contact
-              </Link>{" "}
-              <br />
-            </li>
-          </ul>
-        </MenuLinks>
-      </div>
-    </header>
+      <MenuLinks nav={nav}>
+        <ul className="nav">
+          <li className="mobile">
+            <Link className="nav-item mobile" to="/">
+              Home
+            </Link>{" "}
+            <br />
+          </li>
+          <li>
+            <Link className="nav-item" to="/about/">
+              About
+            </Link>{" "}
+            <br />
+          </li>
+          <li>
+            <Link className="nav-item" to="/gear/">
+              Gear
+            </Link>{" "}
+            <br />
+          </li>
+          <li>
+            <Link className="nav-item" to="/contact/">
+              Contact
+            </Link>{" "}
+            <br />
+          </li>
+        </ul>
+      </MenuLinks>
+    </HeaderContainer>
   )
 }
 
