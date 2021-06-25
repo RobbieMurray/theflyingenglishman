@@ -23,7 +23,8 @@ const About = () => (
     <Seo title="About" />
     <Container className="about">
       <h1>Hi</h1>
-      <p>My name is Robbie and I like to ski and film</p>
+      <p>My name is Robbie and I like to ski and film.</p>
+      <p>For more content check out my social media pages linked below.</p>
       <StaticImage
         src="../images/me.png"
         quality={95}
