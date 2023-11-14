@@ -16,10 +16,10 @@ const Index = () => {
               className="banner__image"
               alt="video showreel"
               src={videoHero}
+              playsinline="true"
               autoPlay
               loop
               muted
-              playsinline
             />
           }
         />
