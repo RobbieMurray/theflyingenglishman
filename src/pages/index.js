@@ -1,13 +1,13 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import Seo from "../components/SEO";
+import SEO from "../components/SEO";
 import BannerModule from "../components/BannerModule/BannerModule";
-import videoHero from "../videos/Hero.mp4";
+import videoHero from "../videos/hero.mp4";
 
 const Index = () => {
   return (
     <>
-      <Seo title="Home" />
+      <SEO title="Home" />
       <Layout>
         <BannerModule
           subTitle="Snowsports Videographer"

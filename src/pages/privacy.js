@@ -1,12 +1,12 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
-import Seo from "../components/SEO"
+import * as React from "react";
+import Layout from "../components/Layout";
+import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
+import SEO from "../components/SEO";
 
 const privacy = () => {
   return (
     <>
-      <Seo title="Privacy Policy" />
+      <SEO title="Privacy Policy" />
       <Layout>
         <BasicTextModule
           title="Privacy Policy"
@@ -28,7 +28,7 @@ This policy is effective as of 22 September 2023. It has been generated with the
         />
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default privacy
+export default privacy;

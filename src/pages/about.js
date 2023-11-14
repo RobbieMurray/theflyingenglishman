@@ -2,13 +2,13 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
-import Seo from "../components/SEO";
+import SEO from "../components/SEO";
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner";
 
 const contact = () => {
   return (
     <>
-      <Seo title="Contact" />
+      <SEO title="Contact" />
       <Layout>
         <SimpleBanner title="About Me" sub="Photo by Noah Wallace">
           <StaticImage
