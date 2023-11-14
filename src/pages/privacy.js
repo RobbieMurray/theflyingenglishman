@@ -1,12 +1,12 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
-import SEO from "../components/SEO";
+import Seo from "../components/SEO";
 
 const privacy = () => {
   return (
     <>
-      <SEO title="Privacy Policy" />
+      <Seo title="Privacy Policy" />
       <Layout>
         <BasicTextModule
           title="Privacy Policy"
