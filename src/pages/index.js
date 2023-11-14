@@ -1,8 +1,8 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import Seo from "../components/SEO"
-import BannerModule from "../components/BannerModule/BannerModule"
-import videoHero from "../videos/Hero2.mp4"
+import * as React from "react";
+import Layout from "../components/Layout";
+import Seo from "../components/SEO";
+import BannerModule from "../components/BannerModule/BannerModule";
+import videoHero from "../videos/Hero.mp4";
 
 const Index = () => {
   return (
@@ -23,7 +23,7 @@ const Index = () => {
         />
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

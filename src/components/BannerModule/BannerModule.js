@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { BannerModuleStyles } from "./BannerModuleStyles"
-import { StaticImage } from "gatsby-plugin-image"
-import Button from "../Button/Button"
+import * as React from "react";
+import { Link } from "gatsby";
+import { BannerModuleStyles } from "./BannerModuleStyles";
+import { StaticImage } from "gatsby-plugin-image";
+import Button from "../Button/Button";
 
 const BannerModule = ({ children, subTitle, enquire }) => {
   return (
@@ -14,7 +14,7 @@ const BannerModule = ({ children, subTitle, enquire }) => {
           <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
-            src="../../../static/macbook-color.jpg" /* - Update with Ski image - */
+            src="../../images/xgames.webp" /* - Update with Ski image - */
             alt="Banner Image"
             layout="fullWidth"
             placeholder="blurred"
@@ -25,7 +25,7 @@ const BannerModule = ({ children, subTitle, enquire }) => {
           <div className="banner__content">
             <StaticImage
               className="banner__logo"
-              src="../../../src/logos/tfe-long.svg"
+              src="../../logos/tfe-long.svg"
               alt="Perk Image"
               layout="constrained"
               placeholder="tracedSVG"
@@ -55,7 +55,7 @@ const BannerModule = ({ children, subTitle, enquire }) => {
       </BannerModuleStyles>
       <span id="topContent"></span>
     </>
-  )
-}
+  );
+};
 
-export default BannerModule
+export default BannerModule;

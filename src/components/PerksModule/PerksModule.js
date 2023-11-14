@@ -1,15 +1,15 @@
-import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { PerksModuleStyles } from "./PerksModuleStyles"
-import { MdOutlineClose as Cross } from "react-icons/md"
-import Perk from "./Perk"
+import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import { PerksModuleStyles } from "./PerksModuleStyles";
+import { MdOutlineClose as Cross } from "react-icons/md";
+import Perk from "./Perk";
 
 const PerksModule = (title) => {
   return (
     <PerksModuleStyles className="section section__padding">
       <StaticImage
         className="perks__image--bg"
-        src="../../../static/abstract-building.jpg"
+        src="../../images/abstract-building.webp"
         alt="Perks Module"
         layout="constrained"
         placeholder="tracedSVG"
@@ -37,7 +37,7 @@ const PerksModule = (title) => {
         </Perk>
       </div>
     </PerksModuleStyles>
-  )
-}
+  );
+};
 
-export default PerksModule
+export default PerksModule;

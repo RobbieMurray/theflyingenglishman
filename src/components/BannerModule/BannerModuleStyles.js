@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const BannerModuleStyles = styled.section`
   height: 100vh;
@@ -59,8 +59,7 @@ export const BannerModuleStyles = styled.section`
     z-index: 2;
     min-height: 33vh;
     width: 100%;
-    height 100%;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,10 +91,10 @@ export const BannerModuleStyles = styled.section`
     }
   }
 
-  .banner__sub{
+  .banner__sub {
     align-self: center; /* Align to the bottom */
     justify: center;
-    
+
     padding-bottom: 30px; /* Add some padding at the bottom if needed */
   }
 
@@ -104,4 +103,4 @@ export const BannerModuleStyles = styled.section`
     justify-content: center;
     gap: var(--gap);
   }
-`
+`;

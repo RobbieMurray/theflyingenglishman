@@ -1,11 +1,9 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ * @type {import('gatsby').GatsbyConfig}
  */
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 module.exports = {
   siteMetadata: {
     title: "TFE Productions",
@@ -15,37 +13,27 @@ module.exports = {
     instagramUsername: "the_flying_englishman",
     tiktokUsername: "the_flying_englishman",
     image: "/macbook-color.jpg",
-    siteUrl: "https://barcadia.netlify.com",
-    developerName: "Morgan Baker Development",
-    developerUrl: "https://www.morganbaker.dev",
+    siteUrl: "https://the-flying-englishman.com",
   },
-  /* Your site config here */
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: "gatsby-plugin-manifest",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        icon: "src/images/icon.png",
       },
     },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-styled-components",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `src/images/TFEFavicon.png`,
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-image`,
   ],
-}
+};
