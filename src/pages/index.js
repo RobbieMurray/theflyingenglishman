@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 import BannerModule from "../components/BannerModule/BannerModule";
-import videoHero from "../videos/hero.mp4";
+import videoHero from "../videos/hero.webm";
 
 const Index = () => {
   return (
@@ -19,7 +19,6 @@ const Index = () => {
               autoPlay
               loop
               muted
-              defaultMuted
               playsinline
             />
           }
