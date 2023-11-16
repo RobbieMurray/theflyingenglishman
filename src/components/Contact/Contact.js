@@ -1,11 +1,11 @@
-import * as React from "react"
-import Button from "../Button/Button"
-import { ContactStyles } from "./ContactStyles"
+import * as React from "react";
+import Button from "../Button/Button";
+import { ContactStyles } from "./ContactStyles";
 
 const Contact = () => {
   return (
     <ContactStyles className="section">
-      <form name="contact" netlify>
+      <form name="contact" method="POST" netlify>
         <input placeholder="Your name..." type="text" name="name" />
         <input placeholder="Your email..." type="email" name="email" />
         <textarea
@@ -16,7 +16,7 @@ const Contact = () => {
         <Button text="Send Message" />
       </form>
     </ContactStyles>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
