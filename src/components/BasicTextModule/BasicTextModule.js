@@ -1,7 +1,7 @@
-import * as React from "react"
-import Button from "../Button/Button"
-import { BasicTextModuleStyles } from "./BasicTextModuleStyles"
-import { Link } from "gatsby"
+import * as React from "react";
+import Button from "../Button/Button";
+import { BasicTextModuleStyles } from "./BasicTextModuleStyles";
+import { Link } from "gatsby";
 
 const BasicTextModule = ({ title, content, link, linkText }) => {
   return (
@@ -9,13 +9,13 @@ const BasicTextModule = ({ title, content, link, linkText }) => {
       <div className="container container__tight">
         <div>
           {title && <h2>{title}</h2>}
-          {content && <p style={{ marginBottom: "60px" }}>{content}</p>}
+          {content && <p>{content}</p>}
 
-          <Button text={linkText} as={Link} to={link} />
+          {link && linkText && <Button text={linkText} as={Link} to={link} />}
         </div>
       </div>
     </BasicTextModuleStyles>
-  )
-}
+  );
+};
 
-export default BasicTextModule
+export default BasicTextModule;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ButtonStyles = styled.button`
   color: #fff;
@@ -12,7 +12,7 @@ export const ButtonStyles = styled.button`
   font-size: var(--p);
   font-weight: 700;
   position: relative;
-  padding-bottom: 15px;
+  padding: 15px 0;
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
@@ -43,4 +43,7 @@ export const ButtonStyles = styled.button`
       }
     }
   }
-`
+  @media (min-width: 1024px) {
+    padding: 30px 0 15px 0;
+  }
+`;

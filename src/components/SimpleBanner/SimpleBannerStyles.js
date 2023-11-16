@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const SimpleBannerStyles = styled.section`
   height: 100vh;
@@ -21,6 +21,9 @@ export const SimpleBannerStyles = styled.section`
     bottom: 0;
     right: 0;
     z-index: 1;
+    .banner__image img {
+      object-position: 75% 80%;
+    }
   }
 
   .gradient {
@@ -53,4 +56,4 @@ export const SimpleBannerStyles = styled.section`
       text-align: left;
     }
   }
-`
+`;
