@@ -12,6 +12,7 @@ module.exports = {
     youtubeUsername: "the_flying_englishman",
     instagramUsername: "the_flying_englishman",
     tiktokUsername: "the_flying_englishman",
+    emailUsername: "contact@the-flying-englishman.com",
     image: "/macbook-color.jpg",
     siteUrl: "https://the-flying-englishman.com",
   },

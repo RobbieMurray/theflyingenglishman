@@ -1,16 +1,21 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { menuItems } from "../../constants/links"
-import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
+import * as React from "react";
+import { Link } from "gatsby";
+import { menuItems } from "../../constants/links";
 import {
-  FaTiktok,
+  FooterStyles,
+  FooterMenuStyles,
+  CopyrightStyles,
+} from "./FooterStyles";
+import {
+  FaTiktok as Tiktok,
   FaInstagram as Instagram,
   FaYoutube as Youtube,
-} from "react-icons/fa"
-import { UseSiteMetadata } from "../Hooks/useSiteMetadata"
+} from "react-icons/fa";
+import { IoIosMail as Mail } from "react-icons/io";
+import { UseSiteMetadata } from "../Hooks/useSiteMetadata";
 
 const Footer = () => {
-  const siteMeta = UseSiteMetadata()
+  const siteMeta = UseSiteMetadata();
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
       <div className="container container__tight">
@@ -24,7 +29,7 @@ const Footer = () => {
                     <span>.</span>
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </FooterMenuStyles>
@@ -66,7 +71,19 @@ const Footer = () => {
                     rel="nofollow noreferrer noopener"
                     aria-label="TikTok profile"
                   >
-                    <FaTiktok />
+                    <Tiktok />
+                  </a>
+                </li>
+              )}
+              {siteMeta.emailUsername && (
+                <li>
+                  <a
+                    href={`mailto:${siteMeta.emailUsername}`}
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                    aria-label="Email"
+                  >
+                    <Mail />
                   </a>
                 </li>
               )}
@@ -85,7 +102,7 @@ const Footer = () => {
         </div>
       </CopyrightStyles>
     </FooterStyles>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
