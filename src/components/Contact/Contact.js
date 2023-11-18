@@ -8,11 +8,11 @@ const Contact = () => {
       <form
         name="contact"
         method="POST"
-        data-netlify-recaptcha="true"
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
         <input placeholder="Your name..." type="text" name="name" />
         <input placeholder="Your email..." type="email" name="email" />
         <textarea
