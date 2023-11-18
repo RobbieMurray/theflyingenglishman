@@ -5,7 +5,13 @@ import { ContactStyles } from "./ContactStyles";
 const Contact = () => {
   return (
     <ContactStyles className="section">
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify-recaptcha="true"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
         <input placeholder="Your name..." type="text" name="name" />
         <input placeholder="Your email..." type="email" name="email" />
         <textarea
