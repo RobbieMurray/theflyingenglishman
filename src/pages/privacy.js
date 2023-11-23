@@ -25,6 +25,8 @@ You are free to refuse my request for your personal information, with the unders
 Your continued use of my website will be regarded as acceptance of my practices around privacy and personal information. If you have any questions about how I handle user data and personal information, feel free to contact me.
 
 This policy is effective as of 22 September 2023. It has been generated with the help of GetTerms.io."
+          link="/"
+          linkText="Return to Home"
         />
       </Layout>
     </>

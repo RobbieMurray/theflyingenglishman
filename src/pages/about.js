@@ -5,7 +5,7 @@ import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
 import Seo from "../components/SEO";
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner";
 
-const contact = () => {
+const about = () => {
   return (
     <>
       <Seo title="About" />
@@ -34,4 +34,4 @@ Any further questions, please inquire below."
   );
 };
 
-export default contact;
+export default about;

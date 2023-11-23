@@ -12,9 +12,9 @@ module.exports = {
     youtubeUsername: "the_flying_englishman",
     instagramUsername: "the_flying_englishman",
     tiktokUsername: "the_flying_englishman",
-    emailUsername: "contact@the-flying-englishman.com",
+    emailUsername: "contact@theflyingenglishman.com",
     image: "/macbook-color.jpg",
-    siteUrl: "https://the-flying-englishman.com",
+    siteUrl: "https://theflyingenglishman.com",
   },
   plugins: [
     "gatsby-plugin-image",
