@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -145,6 +145,7 @@ strong {
 
 i {
   font-style: italic;
+
 }
 
 .underline {
@@ -160,6 +161,7 @@ ul,
 blockquote {
   margin-top: calc(var(--sectionMargin) / 2);
   margin-bottom: calc(var(--sectionMargin) / 2);
+  color: var(--bodyColor);
 }
 
 hr {
@@ -281,4 +283,4 @@ blockquote {
   text-align: center;
   margin-top: calc(var(--gap) / 2);
 }
-`
+`;

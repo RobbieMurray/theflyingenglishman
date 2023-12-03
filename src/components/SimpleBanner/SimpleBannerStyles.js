@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
 export const SimpleBannerStyles = styled.section`
-  height: 100vh;
+  height: 50vh;
   position: relative;
   padding: var(--gap) var(--borderSpacing);
+  @media (min-width: 768px) {
+    height: 70vh;
+  }
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
 
   .container {
     height: 100%;

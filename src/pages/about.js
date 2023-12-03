@@ -5,12 +5,22 @@ import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
 import Seo from "../components/SEO";
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner";
 
+const aboutcontent = [
+  "I’m a specialist snow sports videographer working with elite athletes and brands to produce social media content. I’m passionate about getting the best shot possible, coming up with ideas that resonate with social media audiences and presenting this content so that it reaches the widest audience possible.",
+  "I started filming out of curiosity on my first season in Whistler in 19/20. This lead to working full time for Snowboard Addiction helping them create primarily educational content on multiple platforms. This is where I learned about the power of effective packaging, hooks and content value and how this leads to better performance for social media content.",
+  "The following season I worked with Canadian Team Skier, Bruce Oldham to produce lifestyle  content for his own personal platforms and his sponsors. I also had the opportunity to film for Megan Oldham’s Triple Cork project at X Games Aspen - still under production.",
+];
+
 const about = () => {
   return (
     <>
       <Seo title="About" />
       <Layout>
-        <SimpleBanner title="About Me" sub="Photo by Noah Wallace">
+        <SimpleBanner
+          title="About Me"
+          sub="Photo by Noah Wallace"
+          height="100vh"
+        >
           <StaticImage
             className="banner__image"
             src="../images/xgames.webp"
@@ -19,15 +29,9 @@ const about = () => {
           />
         </SimpleBanner>
         <BasicTextModule
-          title=""
-          content="I’m an international snowsports videographer, currently based out of the UK. I film around Europe, North America, and Australia, creating content for YouTube, commercial companies, and events such as XGames."
-        />
-        <BasicTextModule
-          title="Services"
-          content="I’m available to book for shooting on location, follow cams, and drone footage, as well as YouTube consulting. This involves helping clients on developing a deeper understanding of their audience and how to appeal to their interests. 
-Any further questions, please inquire below."
-          link="/contact"
-          linkText="Contact Me"
+          contents={aboutcontent}
+          link="/services"
+          linkText="My Services"
         />
       </Layout>
     </>

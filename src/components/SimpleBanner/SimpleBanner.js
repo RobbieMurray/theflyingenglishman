@@ -1,9 +1,9 @@
-import * as React from "react"
-import { SimpleBannerStyles } from "./SimpleBannerStyles"
+import * as React from "react";
+import { SimpleBannerStyles } from "./SimpleBannerStyles";
 
-const SimpleBanner = ({ children, title, sub }) => {
+const SimpleBanner = ({ children, title, sub, height }) => {
   return (
-    <SimpleBannerStyles>
+    <SimpleBannerStyles style={{ height: { height } }}>
       {children}
 
       {title && (
@@ -21,7 +21,7 @@ const SimpleBanner = ({ children, title, sub }) => {
       )}
       <div className="gradient"></div>
     </SimpleBannerStyles>
-  )
-}
+  );
+};
 
-export default SimpleBanner
+export default SimpleBanner;

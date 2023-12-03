@@ -8,7 +8,11 @@ export const menuItems = [
     text: "about",
   },
   {
+    path: "/services",
+    text: "services",
+  },
+  {
     path: "/contact",
     text: "contact",
   },
-]
+];

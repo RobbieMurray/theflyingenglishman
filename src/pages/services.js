@@ -5,22 +5,36 @@ import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
 import Seo from "../components/SEO";
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner";
 
+const servicesList = [
+  "Follow cams",
+  "Viral Shorts Content",
+  "Educational Content",
+  "Commercial Projects",
+  "Social Media Strategy",
+  "YouTube Packaging (Titles & Thumbnails)",
+];
+const contents = [
+  "I’m back based in the UK having spent 3 seasons in Whistler and last season travelling to film in resorts in Canada, USA, Europe and Australia. For the 23/24 season, I’ll be available to travel to film in all these locations.",
+  "Person, Professional and Commercial sessions are available to be booked incluing:",
+];
+
 const services = () => {
   return (
     <>
       <Seo title="Services" />
       <Layout>
-        <SimpleBanner title="Services" sub="Photo by Noah Wallace">
+        <SimpleBanner title="Services">
           <StaticImage
             className="banner__image"
-            src="../images/xgames.webp"
+            src="../images/mountains.webp"
             alt="filming at Xgames"
           />
         </SimpleBanner>
+
         <BasicTextModule
           title=""
-          content="I’m available to book for shooting on location, follow cams, and drone footage, as well as YouTube consulting. This involves helping clients on developing a deeper understanding of their audience and how to appeal to their interests. 
-Any further questions please inquire below."
+          contents={contents}
+          list={servicesList}
           link="/contact"
           linkText="Contact Me"
         />
