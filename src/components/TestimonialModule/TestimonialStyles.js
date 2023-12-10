@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const PostItemsStyles = styled.section`
   display: flex;
@@ -14,9 +14,9 @@ export const PostItemsStyles = styled.section`
   @media (min-width: 1200px) {
     gap: var(--gap);
   }
-`
+`;
 
-export const PostItemStyles = styled(Link)`
+export const PostItemStyles = styled.section`
   flex: 0 0 100%;
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
@@ -27,6 +27,7 @@ export const PostItemStyles = styled(Link)`
   text-decoration: none;
   transition: border-color 0.6s ease, background-color 0.6s ease,
     box-shadow 0.6s ease;
+  cursor: pointer;
 
   &:first-child {
     margin-top: 0;
@@ -96,27 +97,4 @@ export const PostItemStyles = styled(Link)`
     background-color: #151515;
     box-shadow: var(--boxShadow);
   }
-`
-
-export const PostSingleStyles = styled.article`
-  padding: var(--sectionMargin) var(--borderSpacing) 0 var(--borderSpacing);
-  max-width: 750px;
-  margin: 0 auto;
-  box-sizing: content-box;
-
-  .blogsingle {
-    &__title {
-      font-size: var(--h2);
-      font-weight: 700;
-    }
-
-    &__content {
-      border-top: 2px solid var(--primary);
-      padding-top: calc(var(--gap));
-    }
-
-    &__back {
-      padding-top: var(--gap);
-    }
-  }
-`
+`;

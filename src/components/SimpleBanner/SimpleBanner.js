@@ -3,7 +3,7 @@ import { SimpleBannerStyles } from "./SimpleBannerStyles";
 
 const SimpleBanner = ({ children, title, sub, height }) => {
   return (
-    <SimpleBannerStyles style={{ height: { height } }}>
+    <SimpleBannerStyles height={height}>
       {children}
 
       {title && (

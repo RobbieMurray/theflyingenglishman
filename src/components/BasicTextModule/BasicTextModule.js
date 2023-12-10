@@ -7,7 +7,6 @@ const BasicTextModule = ({
   title,
   contents,
   content2,
-  content3,
   list,
   link,
   linkText,
@@ -18,8 +17,6 @@ const BasicTextModule = ({
         {title && <h2>{title}</h2>}
 
         {contents && contents.map((content) => <p>{content}</p>)}
-        {content2 && <p>{content2}</p>}
-        {content3 && <p>{content3}</p>}
         {list && (
           <ul>
             {list.map((item) => (
@@ -27,6 +24,8 @@ const BasicTextModule = ({
             ))}
           </ul>
         )}
+        {content2 && <p>{content2}</p>}
+
         {link && linkText && <Button text={linkText} as={Link} to={link} />}
       </div>
     </BasicTextModuleStyles>

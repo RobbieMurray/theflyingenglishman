@@ -8,7 +8,7 @@ export const SimpleBannerStyles = styled.section`
     height: 70vh;
   }
   @media (min-width: 1024px) {
-    height: 100vh;
+    height: ${(props) => props.height};
   }
 
   .container {
