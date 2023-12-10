@@ -1,7 +1,6 @@
 import * as React from "react";
-import Button from "../Button/Button";
+
 import { PortfolioModuleStyles } from "./PortfolioModuleStyles";
-import { Link } from "gatsby";
 
 const PortfolioModule = ({ title, client, description, videosrc }) => {
   return (
