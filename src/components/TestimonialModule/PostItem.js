@@ -22,7 +22,7 @@ const BlogItem = ({ node }, key) => {
       <h4>{name}</h4>
       <p>{title}</p>
       <div className="blogitem__meta">
-        <Button as="span" text="About Them" arrow={true} />
+        <Button as="span" text={"About " + name.split(" ")[0]} arrow={true} />
       </div>
     </PostItemStyles>
   );

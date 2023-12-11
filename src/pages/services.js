@@ -50,7 +50,7 @@ const services = () => {
           linkText="Contact Me"
         />
         <PortfolioModule
-          title="Example Client Content"
+          title="Previous Client Work"
           client="Bruce Oldham"
           description="Create a video promoting his online coaching business"
           videosrc="https://www.youtube.com/embed/AbCfMnhXeuE?si=lj6--b_bGwi349k8"
