@@ -7,7 +7,7 @@ export const PortfolioModuleStyles = styled.section`
     }
     .itemcontainer {
       margin: 0 auto;
-      padding: 0 20px;
+
       display: flex;
       flex-direction: column;
 
