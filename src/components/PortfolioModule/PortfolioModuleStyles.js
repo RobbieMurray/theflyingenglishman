@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 export const PortfolioModuleStyles = styled.section`
   .container {
-    margin: 0;
-    padding: 0 20px;
-
     h2 {
       padding: 0 0 30px 0;
     }
@@ -42,7 +39,6 @@ export const PortfolioModuleStyles = styled.section`
       }
     }
     @media (min-width: 768px) {
-      padding: 0 40px;
       .itemcontainer {
         flex-direction: row; // Align children side by side for tablet and above
         align-items: center;
@@ -64,7 +60,6 @@ export const PortfolioModuleStyles = styled.section`
     }
 
     @media (min-width: 1024px) {
-      padding: 0 50px;
       .itemcontainer {
         .video-container {
           flex-basis: 60%; // Adjusted for desktop view

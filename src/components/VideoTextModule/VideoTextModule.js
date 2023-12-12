@@ -14,7 +14,7 @@ const VideoTextModule = ({
 }) => {
   return (
     <VideoTextModuleStyles className="section">
-      <div className="container">
+      <div className="container container__tight">
         {title && <h2>{title}</h2>}
 
         {contents && contents.map((content) => <p>{content}</p>)}
